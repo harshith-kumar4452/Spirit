@@ -15,6 +15,21 @@ export default function LandingPage() {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-black">
+      {/* Branding Logo in Top Left */}
+      <div className="absolute top-6 left-6 z-50 flex items-center gap-3">
+        <div className="relative w-10 h-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-400 to-violet-600 rounded-full blur-md opacity-80" />
+          <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-brand-400 to-violet-600 flex items-center justify-center shadow-lg border border-white/20">
+            <span className="text-white font-black text-lg tracking-tight">GS</span>
+          </div>
+        </div>
+        <div className="flex flex-col drop-shadow-lg">
+          <span className="font-black text-xl tracking-tight leading-none">
+            <span className="text-violet-400">Gen</span><span className="text-white">Sathi</span>
+          </span>
+        </div>
+      </div>
+
       {/* Video Background Layer */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video

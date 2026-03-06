@@ -42,9 +42,9 @@ export function Navbar() {
             {/* Logo */}
             <Link href={user ? (isAdmin ? '/admin' : '/dashboard') : '/'} className="flex items-center gap-3 group">
               <div className="relative w-9 h-9">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-400 to-violet-600 rounded-xl blur-md opacity-60 group-hover:opacity-90 transition-opacity" />
-                <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-brand-400 to-violet-600 flex items-center justify-center shadow-lg">
-                  <span className="text-white font-black text-lg tracking-tight">G</span>
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-400 to-violet-600 rounded-full blur-md opacity-60 group-hover:opacity-90 transition-opacity" />
+                <div className="relative w-9 h-9 rounded-full bg-gradient-to-br from-brand-400 to-violet-600 flex items-center justify-center shadow-lg border border-white/20">
+                  <span className="text-white font-black text-lg tracking-tight">GS</span>
                 </div>
               </div>
               <div className="flex flex-col">
